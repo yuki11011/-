@@ -12,6 +12,9 @@
 
 
 void initBoolArray(bool* settingArray, int arraySize) {
+    if (settingArray == nullptr){
+        return 1;
+    }
     for (int arrayElement = 0; arrayElement < arraySize; ++arrayElement) {
         settingArray[arrayElement] = false;
     }
